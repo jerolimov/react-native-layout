@@ -1,26 +1,34 @@
 # react-native-layout
 
-## Semantic layout helpers for react-native
-
-API and documentation WIP. Ideas and contributions are welcome.
-
-Please use the issue tracker or create a pull request.
+## Semantic JSX layout components for react-native
 
 This project contains [react-native](https://facebook.github.io/react-native/)
-UI components which brings more semantic to your JSX code.
+layout components which brings more semantic to your JSX code.
 
-It contains simple layout modules like [Center](/lib/Center.js),
-[Fill](/lib/Fill.js), [Header](/lib/Header.js), [Footer](/lib/Footer.js),
-renames a view group as [LinearLayout](/lib/LinearLayout.js) and
-provides a little bit more complex [BorderLayout](/lib/BorderLayout.js).
+It contains a "little bit more complex" [BorderLayout](/lib/BorderLayout.js),
+as well as really simple layout modules like
+[Center](/lib/Center.js), [Fill](/lib/Fill.js),
+[Header](/lib/Header.js), [Footer](/lib/Footer.js),
+and it also renames a view group as [LinearLayout](/lib/LinearLayout.js).
+
+API, documentation and unit tests are WIP. Ideas, discussions and contributions
+are welcome:
+[Open an issue](https://github.com/jerolimov/react-native-layout/issues/new)
+
+If your brave install the alpha version (0.0.x):
+
+    npm install react-native-layout --save
+
+You can expect a beta version (0.1.0) soon.
 
 ## Why?
 
 Developing apps with [react-native](https://facebook.github.io/react-native/)
 is great. But sometimes the JSX markup loses its simplicity with a growing
-number of user screens, components, view elements, ...
-
-Especially when you extracts / imports the stylesheet from external files.
+number of components and view elements.
+Especially when you extracts and imports the
+[stylesheets](https://facebook.github.io/react-native/docs/stylesheet.html)
+from an external file.
 
 ## Examples
 
