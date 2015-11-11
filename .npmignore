@@ -1,3 +1,5 @@
 .git
+.gitignore
+.npmignore
 /examples
 /screenshots
