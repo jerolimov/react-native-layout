@@ -32,8 +32,17 @@ from an external file.
 
 ## Examples
 
-An example project is coming soon. Currently please checkout the following
-inline codes or the examples folder.
+An example project is coming soon. Currently please checkout the `examples`
+folder and the following inline codes.
+
+![Image of BorderLayoutExample1](https://raw.githubusercontent.com/jerolimov/react-native-layout/master/screenshots/BorderLayoutExample1.png)
+[BorderLayoutExample1.js](/examples/BorderLayoutExample1.js)
+
+![Image of BorderLayoutExample2](https://raw.githubusercontent.com/jerolimov/react-native-layout/master/screenshots/BorderLayoutExample2.png)
+[BorderLayoutExample2.js](/examples/BorderLayoutExample2.js)
+
+![Image of BorderLayoutExample3](https://raw.githubusercontent.com/jerolimov/react-native-layout/master/screenshots/BorderLayoutExample3.png)
+[BorderLayoutExample3.js](/examples/BorderLayoutExample3.js)
 
 ### Center Content
 
