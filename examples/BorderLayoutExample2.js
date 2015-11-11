@@ -1,8 +1,8 @@
 
 import React, { Component, View, Text } from 'react-native';
 
-import { Fill, Top, Left, Right, Bottom } from '../BorderLayout';
-import Center from '../Center';
+import { Fill, Top, Left, Right, Bottom } from '../lib/BorderLayout';
+import Center from '../lib/Center';
 
 export default class BorderLayoutExample2 extends Component {
 	render() {
