@@ -67,19 +67,19 @@ Write:
 Instead of:
 
 ```jsx
-<Layout style={{ flex: 1 }}>
+<View style={{ flex: 1 }}>
     <View><Text>Header</Text></View>
     <View style={{ flex: 1 }}><Text>Content</Text></View>
-    <View><TextFooter</Text></View>
-</Layout>
+    <View><Text>Footer</Text></View>
+</View>
 ```
 
 You could write:
 
 ```jsx
-<Layout style={{ flex: 1 }}>
+<Fill>
     <Top><Text>Header</Text></Top>
     <Bottom><TextFooter</Text></Bottom>
-    <View style={{ flex: 1 }}><Text>Content</Text></View>
-</Layout>
+    <View><Text>Content</Text></View>
+</Fill>
 ```
