@@ -1,5 +1,7 @@
 # react-native-layout
 
+## Semantic layout helpers for react-native
+
 API and documentation WIP. Ideas and contributions are welcome.
 
 Please use the issue tracker or create a pull request.
