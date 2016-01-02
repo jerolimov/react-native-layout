@@ -4,26 +4,39 @@
   "description": "Semantic JSX layout components for react-native",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint lib",
+    "test": "true",
+    "_test": "mocha --recursive",
+    "_coverage": "istanbul cover ./node_modules/mocha/bin/_mocha --recursive"
   },
+  "author": "Christoph Jerolimov",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jerolimov/react-native-layout.git"
   },
-  "keywords": [
-    "react-native",
-    "react-component",
-    "layout",
-    "android",
-    "ios"
-  ],
-  "peerDependencies": {
-    "react-native": ">=0.8"
-  },
-  "author": "Christoph Jerolimov",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/jerolimov/react-native-layout/issues"
   },
-  "homepage": "https://github.com/jerolimov/react-native-layout#readme"
+  "homepage": "https://github.com/jerolimov/react-native-layout#readme",
+  "keywords": [
+    "react-native",
+    "react-component",
+    "android",
+    "ios",
+    "layout",
+    "layoutmanager",
+    "borderlayout",
+    "gridlayout"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "coveralls": "^2.11.4",
+    "eslint": "^1.10.3",
+    "istanbul": "^0.4.1",
+    "mocha": "^2.3.4"
+  },
+  "peerDependencies": {
+    "react-native": ">=0.8"
+  }
 }
