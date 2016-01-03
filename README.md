@@ -1,18 +1,21 @@
 # react-native-layout
 
-## Semantic JSX layout components for react-native
+> Semantic JSX layout components for react-native
 
-This project contains [react-native](https://facebook.github.io/react-native/)
-layout components which brings more semantic to your JSX code.
+This library contains multiple easy-to-use
+[react-native](https://facebook.github.io/react-native/) layout components
+which brings more semantic into your JSX code.
 
-It contains a "little bit more complex" [BorderLayout](/lib/BorderLayout.js),
-as well as really simple layout modules like
-[Center](/lib/Center.js), [Fill](/lib/Fill.js),
-[Header](/lib/Header.js), [Footer](/lib/Footer.js),
-and it also renames a view group as [LinearLayout](/lib/LinearLayout.js).
+* It contains really simple flex-based layout modules like
+  * [Fill](/lib/Fill.js)
+  * [Center](/lib/Center.js)
+  * [Header](/lib/Header.js)
+  * [Footer](/lib/Footer.js)
+  * [LinearLayout](/lib/LinearLayout.js)
+* and a "little bit more complex" [BorderLayout](/lib/BorderLayout.js).
 
-API, documentation and unit tests are WIP. Ideas, discussions and contributions
-are welcome:
+API, documentation and unit tests are WIP.
+Ideas, discussions and contributions are welcome:
 [Open an issue](https://github.com/jerolimov/react-native-layout/issues/new)
 
 If your brave install the alpha version (0.0.x):
