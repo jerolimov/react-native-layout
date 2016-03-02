@@ -1,6 +1,6 @@
 {
   "name": "react-native-layout",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Semantic JSX layout components for react-native",
   "main": "index.js",
   "scripts": {

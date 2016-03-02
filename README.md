@@ -33,6 +33,28 @@ Especially when you extracts and imports the
 [stylesheets](https://facebook.github.io/react-native/docs/stylesheet.html)
 from an external file.
 
+## Usage
+
+Load any of the layout components you would like.
+
+```js
+var NativeLayout = require('react-native-layout');
+
+var {
+  BorderLayout,
+  Center,
+  Footer,
+  Header,
+  HorizontalLinearLayout,
+  LinearLayout,
+  VerticalLinearLayout
+} = NativeLayout;
+
+var { Fill, Top, Left, Right, Bottom } = BorderLayout;
+```
+
+Then use them as shown below...
+
 ## Examples
 
 An example project is coming soon. Currently please checkout the `examples`
