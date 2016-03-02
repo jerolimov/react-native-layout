@@ -1,6 +1,6 @@
 
 import BorderLayout from './lib/BorderLayout';
-import CenterSubview from './lib/Center';
+import Center from './lib/Center';
 import Footer from './lib/Footer';
 import Header from './lib/Header';
 import HorizontalLinearLayout from './lib/HorizontalLinearLayout';
