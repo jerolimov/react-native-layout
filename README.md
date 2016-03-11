@@ -12,17 +12,14 @@ which brings more semantic into your JSX code.
   * [Header](/lib/Header.js)
   * [Footer](/lib/Footer.js)
   * [LinearLayout](/lib/LinearLayout.js)
-* and a "little bit more complex" [BorderLayout](/lib/BorderLayout.js).
+  * [HorizontalLinearLayout](/lib/HorizontalLinearLayout.js)
+  * [VerticalLinearLayout](/lib/HorizontalLinearLayout.js)
+  * [BorderLayout](/lib/BorderLayout.js)
+  * [Overlay](/lib/Overlay.js)
 
-API, documentation and unit tests are WIP.
-Ideas, discussions and contributions are welcome:
-[Open an issue](https://github.com/jerolimov/react-native-layout/issues/new)
+## Install
 
-If your brave install the alpha version (0.0.x):
-
-    npm install react-native-layout --save
-
-You can expect a beta version (0.1.0) soon.
+    npm install kristianmandrup/react-native-layout --save
 
 ## Why?
 
@@ -53,12 +50,27 @@ var {
 var { Fill, Top, Left, Right, Bottom } = BorderLayout;
 ```
 
+Or using ES6 modules and destructuring..
+
+```js
+import NativeLayout, {
+  BorderLayout,
+  Center,
+  Footer,
+  Header,
+  HorizontalLinearLayout,
+  LinearLayout,
+  VerticalLinearLayout
+} from 'react-native-layout';
+
+const { Fill, Top, Left, Right, Bottom } = BorderLayout;
+```
+
 Then use them as shown below...
 
 ## Examples
 
-An example project is coming soon. Currently please checkout the `examples`
-folder and the following inline codes.
+Checkout the `examples` folder!
 
 <img width="200" alt="Screenshot of BorderLayoutExample1" src="https://raw.githubusercontent.com/jerolimov/react-native-layout/master/screenshots/BorderLayoutExample1.png"><br/>
 [BorderLayoutExample1.js](/examples/BorderLayoutExample1.js)
