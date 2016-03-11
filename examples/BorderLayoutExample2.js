@@ -1,13 +1,13 @@
 
 import React, { Component, View, Text } from 'react-native';
 
-import { Fill, Top, Left, Right, Bottom } from './lib/BorderLayout';
+import { FillLayout, Top, Left, Right, Bottom } from './lib/BorderLayout';
 import Center from './lib/Center';
 
 export default class BorderLayoutExample2 extends Component {
 	render() {
 		return (
-			<Fill>
+			<FillLayout>
 				<Top style={{ paddingTop: 20, flexDirection: 'row' }}>
 					<Center style={{ height: 44 }}>
 						<Text style={{ fontSize: 18 }}>Hallo</Text>
@@ -19,7 +19,7 @@ export default class BorderLayoutExample2 extends Component {
 				<Right style={{ width: 100, borderColor: 'gray', borderWidth: 1, backgroundColor: 'lightblue' }} />
 
 				<View style={{ flex: 1, borderColor: 'gray', borderWidth: 1, backgroundColor: 'lightgreen' }} />
-			</Fill>
+			</FillLayout>
 		);
 	}
 }

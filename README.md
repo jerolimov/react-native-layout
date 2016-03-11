@@ -42,12 +42,13 @@ var {
   Center,
   Footer,
   Header,
-  HorizontalLinearLayout,
+  Fill,
   LinearLayout,
-  VerticalLinearLayout
+  HorizontalLinearLayout,
+  VerticalLinearLayout,
 } = NativeLayout;
 
-var { Fill, Top, Left, Right, Bottom } = BorderLayout;
+var { FillLayout, Top, Left, Right, Bottom } = BorderLayout;
 ```
 
 Or using ES6 modules and destructuring..
@@ -58,12 +59,13 @@ import NativeLayout, {
   Center,
   Footer,
   Header,
-  HorizontalLinearLayout,
+  Fill,
   LinearLayout,
+  HorizontalLinearLayout,
   VerticalLinearLayout
 } from 'react-native-layout';
 
-const { Fill, Top, Left, Right, Bottom } = BorderLayout;
+const { FillLayout, Top, Left, Right, Bottom } = BorderLayout;
 ```
 
 Then use them as shown below...
@@ -114,9 +116,9 @@ Instead of:
 You could write:
 
 ```jsx
-<Fill>
+<FillLayout>
     <Top><Text>Header</Text></Top>
     <Bottom><TextFooter</Text></Bottom>
     <View><Text>Content</Text></View>
-</Fill>
+</FillLayout>
 ```

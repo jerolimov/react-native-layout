@@ -10,6 +10,7 @@ var {
   StyleSheet,
   Text,
   View,
+  ScrollView
 } = React;
 
 import BorderLayoutExample1 from './BorderLayoutExample1';
