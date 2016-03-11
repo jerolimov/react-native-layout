@@ -12,19 +12,19 @@ var {
   View,
 } = React;
 
+import BorderLayoutExample1 from './BorderLayoutExample1';
+import BorderLayoutExample2 from './BorderLayoutExample2';
+import BorderLayoutExample3 from './BorderLayoutExample3';
+
 var examples = React.createClass({
   render: function() {
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native!
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit index.android.js
-        </Text>
-        <Text style={styles.instructions}>
-          Shake or press menu button for dev menu
-        </Text>
+        <ScrollView>
+            <BorderLayoutExample1/>
+            <BorderLayoutExample2/>
+            <BorderLayoutExample3/>
+        </ScrollView>
       </View>
     );
   }

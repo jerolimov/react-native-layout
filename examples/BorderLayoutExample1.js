@@ -1,7 +1,7 @@
 
 import React, { Component, View, Text } from 'react-native';
 
-import { Layout, Top, Left, Right, Bottom } from '../lib/BorderLayout';
+import { Layout, Top, Left, Right, Bottom } from './lib/BorderLayout';
 
 export default class BorderLayoutExample1 extends Component {
 	render() {
