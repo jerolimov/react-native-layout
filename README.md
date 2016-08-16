@@ -19,7 +19,7 @@ which brings more semantic into your JSX code.
 
 ## Install
 
-    npm install kristianmandrup/react-native-layout --save
+    npm install react-native-layout --save
 
 ## Why?
 
