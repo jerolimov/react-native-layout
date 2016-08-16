@@ -52,7 +52,7 @@ export class Layout extends Component {
 	}
 }
 
-export class FillLayout extends Component {
+export class Fill extends Component {
 	render() {
 		return (
 			<Layout style={[{ flex: 1 }, this.props.style ]}>
@@ -69,7 +69,7 @@ export class Bottom extends Layout {}
 
 export default {
 	Layout,
-	FillLayout,
+	Fill,
 	Top,
 	Left,
 	Right,

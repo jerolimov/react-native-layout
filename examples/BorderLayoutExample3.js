@@ -1,9 +1,9 @@
 
 import React, { Component, View, Text } from 'react-native';
 
-import { Fill, Top, Left, Right, Bottom } from '../lib/BorderLayout';
-import Center from '../lib/Center';
-import Overlay from '../lib/Overlay';
+import { FillLayout, Top, Left, Right, Bottom } from './lib/BorderLayout';
+import Center from './lib/Center';
+import Overlay from './lib/Overlay';
 
 export default class BorderLayoutExample3 extends Component {
 	constructor() {
@@ -17,7 +17,7 @@ export default class BorderLayoutExample3 extends Component {
 		const { overlay } = this.state;
 
 		return (
-			<Fill>
+			<FillLayout>
 				<Top style={{ paddingTop: 20, flexDirection: 'row' }}>
 					<Center style={{ height: 44 }}>
 						<Text style={{ fontSize: 18 }}>Hallo</Text>
@@ -58,7 +58,7 @@ export default class BorderLayoutExample3 extends Component {
 						</Center>
 					</Overlay>
 				}
-			</Fill>
+			</FillLayout>
 		);
 	}
 }
