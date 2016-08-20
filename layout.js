@@ -6,7 +6,7 @@ export const orientation = {
   vertical: 'vertical'
 };
 
-export default class LinearLayout extends Component {
+export class LinearLayout extends Component {
   render() {
     return (
       <View style={ { flexDirection: this.props.orientation == orientation.horizontal ? 'row' : 'column' } }>
@@ -16,7 +16,7 @@ export default class LinearLayout extends Component {
   }
 }
 
-export default class VerticalLinearLayout extends Component {
+export class VerticalLinearLayout extends Component {
   render() {
     return (
       <View style={ { flexDirection: 'column' } }>
@@ -27,7 +27,7 @@ export default class VerticalLinearLayout extends Component {
 }
 
 
-export default class Overlay extends Component {
+export class Overlay extends Component {
   render() {
     return (
       <View style={ [{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, backgroundColor: 'transparent' }, this.props.style] }>
@@ -37,7 +37,7 @@ export default class Overlay extends Component {
   }
 }
 
-export default class HorizontalLinearLayout extends Component {
+export class HorizontalLinearLayout extends Component {
   render() {
     return (
       <View style={ { flexDirection: 'row' } }>
