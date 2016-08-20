@@ -8,11 +8,11 @@ import LinearLayout from './lib/LinearLayout';
 import VerticalLinearLayout from './lib/VerticalLinearLayout';
 
 export default {
-	BorderLayout,
-	Center,
-	Footer,
-	Header,
-	HorizontalLinearLayout,
-	LinearLayout,
-	VerticalLinearLayout
+  BorderLayout,
+  Center,
+  Footer,
+  Header,
+  HorizontalLinearLayout,
+  LinearLayout,
+  VerticalLinearLayout
 };
