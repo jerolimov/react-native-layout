@@ -1,8 +1,8 @@
 {
   "name": "react-native-layout",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Semantic JSX layout components for react-native",
-  "main": "index.js",
+  "main": "layout.js",
   "scripts": {
     "lint": "eslint lib",
     "test": "true",
