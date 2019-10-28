@@ -1,13 +1,6 @@
-/*eslint no-unused-vars: 0*/
+import React from 'react';
+import { View, ViewProps } from 'react-native';
 
-import React, { Component, View } from 'react-native';
-
-export default class HorizontalLinearLayout extends Component {
-	render() {
-		return (
-			<View style={{ flexDirection: 'row' }}>
-				{ this.props.children }
-			</View>
-		);
-	}
+export default function HorizontalLinearLayout({ style, ...props }: ViewProps) {
+  return <View {...props} style={[style, { flexDirection: 'row' }]} />;
 }

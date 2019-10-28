@@ -1,18 +1,18 @@
-/*eslint no-unused-vars: 0*/
+import React from 'react';
+import { View, ViewProps } from 'react-native';
 
-import React, { Component, View } from 'react-native';
+interface Props extends ViewProps {
+  orientation: 'horizontal' | 'vertical';
+}
 
-export const orientation = {
-	horizontal: 'horizontal',
-	vertical: 'vertical'
-};
-
-export default class LinearLayout extends Component {
-	render() {
-		return (
-			<View style={{ flexDirection: this.props.orientation == orientation.horizontal ? 'row' : 'column' }}>
-				{ this.props.children }
-			</View>
-		);
-	}
+export default function LinearLayout({ orientation, style, ...props }: Props) {
+  return (
+    <View
+      {...props}
+      style={[
+        style,
+        { flexDirection: orientation === 'horizontal' ? 'row' : 'column' },
+      ]}
+    />
+  );
 }

@@ -1,13 +1,15 @@
-/*eslint no-unused-vars: 0*/
+import React from 'react';
+import { StyleSheet, View, ViewProps } from 'react-native';
 
-import React, { Component, View } from 'react-native';
-
-export default class Overlay extends Component {
-	render() {
-		return (
-			<View style={[{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, backgroundColor: 'transparent' }, this.props.style ]}>
-				{ this.props.children }
-			</View>
-		);
-	}
+export default function Overlay({ style, ...props }: ViewProps) {
+  return (
+    <View
+      {...props}
+      style={[
+        StyleSheet.absoluteFill,
+        { backgroundColor: 'transparent' },
+        style,
+      ]}
+    />
+  );
 }
