@@ -1,0 +1,14 @@
+name: CI
+
+on: [push]
+
+jobs:
+  run-linter:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - uses: actions/setup-node@v1
+    - run: npm install -g yarn
+    - run: yarn install
+    - run: yarn test
+    - run: yarn run lint
