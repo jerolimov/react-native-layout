@@ -2,15 +2,9 @@
   "name": "react-native-layout",
   "version": "0.0.4",
   "description": "Semantic JSX layout components for react-native",
-  "main": "index.js",
-  "scripts": {
-    "lint": "eslint lib",
-    "test": "true",
-    "_test": "mocha --recursive",
-    "_coverage": "istanbul cover ./node_modules/mocha/bin/_mocha --recursive"
-  },
-  "author": "Christoph Jerolimov",
   "license": "MIT",
+  "author": "Christoph Jerolimov",
+  "homepage": "https://github.com/jerolimov/react-native-layout",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jerolimov/react-native-layout.git"
@@ -18,26 +12,43 @@
   "bugs": {
     "url": "https://github.com/jerolimov/react-native-layout/issues"
   },
-  "homepage": "https://github.com/jerolimov/react-native-layout#readme",
-  "keywords": [
-    "react-native",
-    "react-component",
-    "android",
-    "ios",
-    "layout",
-    "layoutmanager",
-    "borderlayout",
-    "gridlayout"
+  "main": "dist/index.js",
+  "module": "dist/react-native-layout.esm.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist"
   ],
-  "dependencies": {},
-  "devDependencies": {
-    "babel-eslint": "^5.0.0-beta6",
-    "coveralls": "^2.11.4",
-    "eslint": "^1.10.3",
-    "istanbul": "^0.4.1",
-    "mocha": "^2.3.4"
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test --env=jsdom",
+    "lint": "tsdx lint"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
   },
   "peerDependencies": {
-    "react-native": ">=0.8"
+    "react": ">=16",
+    "react-native": "^0.61.2"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.20",
+    "@types/react": "^16.9.11",
+    "@types/react-dom": "^16.9.3",
+    "@types/react-native": "^0.60.21",
+    "husky": "^3.0.9",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "tsdx": "^0.10.5",
+    "tslib": "^1.10.0",
+    "typescript": "^3.6.4"
   }
 }

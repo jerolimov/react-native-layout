@@ -1,8 +1,0 @@
-.git
-.gitignore
-.npmignore
-/node_modules
-/coverage
-/examples
-/screenshots
-*.log
